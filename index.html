@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Personal portfolio showcasing projects in frontend, full stack development, and modern UI design.">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="toggle-dark" id="darkToggle">Dark Mode</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hello, I'm Vipin</h1>
+                <p><span class="typed-text"></span></p>
+            </div>
+            <div class="hero-image">
+                <img src="IMG_20221212_133548~2.jpg" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Dedicated and detail-oriented IT Diploma student with strong programming fundamentals and hands-on
+            experience in full stack web development. Passionate about building efficient, responsive web applications
+            and eager to contribute to a dynamic development team. </p>
+    </section>
+
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="images/portfolio.png" alt="Portfolio Website Screenshot">
+                <h3>Portfolio Website</h3>
+                <p>Designed and developed a responsive personal portfolio website to showcase my skills and projects.
+                </p>
+                <div class="project-buttons">
+                    <button class="see-project-btn" data-video="videos/portfolio.mp4">See Project</button>
+                    <button class="project-details-btn" data-title="Portfolio Website" data-details="Developed a mobile-responsive personal website using 
+HTML, CSS, and JavaScript. 
+Includes sections for About Me, Skills, and Contact Form.   ">
+                        Project Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/attendence.png" alt="Portfolio Website Screenshot">
+                <h3>Attendence System </h3>
+                <p>Designed and developed a responsive Attendance Dashboard.
+                </p>
+                <div class="project-buttons">
+                    <button class="see-project-btn" data-video="videos/attendence_project.mp4">See Project</button>
+                    <button class="project-details-btn" data-title="Portfolio Website" data-details="Developed a web-based attendance system using HTML, CSS, 
+JavaScript, Node.js, Express.js, and MongoDB.  
+The application includes a student registration form, a 
+teacher dashboard to mark daily attendance, and 
+functionality to find attendance records by date. Enabled 
+efficient attendance tracking and data management through a 
+user-friendly interface and persistent storage. ">
+                        Project Details
+                    </button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/home.jpg" alt="Portfolio Website Screenshot">
+                <h3>Home Automation </h3>
+                <p>Developed an IoT-based smart home system integrating
+                    sensors and actuators with a custom-built dashboard for real-
+                    time control and automation.
+                </p>
+                <div class="project-buttons">
+                    <button class="see-project-btn" data-video="videos/Home_automation.mp4">See Project</button>
+                    <button class="project-details-btn" data-title="Portfolio Website" data-details="Key features included automated lighting using an LDR sensor, 
+motion-triggered door operation, and gas leak detection with 
+MQ sensors. Enhanced home safety and energy efficiency 
+while showcasing hands-on skills in embedded systems, 
+sensor integration, and dashboard UI development. ">
+                        Project Details
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="videoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video id="modalVideo" controls></video>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="skills-section" id="skills">
+    <h2>Pragramming Skills</h2>
+    <div class="skills-container">
+        <div class="skill" data-percent="70">
+            <h4>HTML</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>70%</p>
+        </div>
+
+        <div class="skill" data-percent="60">
+            <h4>CSS</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>60%</p>
+        </div>
+
+        <div class="skill" data-percent="50">
+            <h4>JavaScript</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>50%</p>
+        </div>
+        <div class="skill" data-percent="30">
+            <h4>Node.js</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>30%</p>
+        </div>
+        <div class="skill" data-percent="20">
+            <h4>Mongo DB</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>20%</p>
+        </div>
+        <div class="skill" data-percent="50">
+            <h4>C</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>50%</p>
+        </div>
+        <div class="skill" data-percent="50">
+            <h4>C++</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>50%</p>
+        </div>
+        <div class="skill" data-percent="30">
+            <h4>Java</h4>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>30%</p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <p id="formSuccess">Message sent successfully!</p>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Vipin. All rights reserved.</p>
+    </footer>
+
+
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('formSuccess').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('formSuccess').style.display = 'none';
+            }, 3000);
+            this.reset();
+        });
+
+        const darkToggle = document.getElementById('darkToggle');
+        darkToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            darkToggle.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+        });
+
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const header = document.querySelector('header');
+
+        const typedText = document.querySelector('.typed-text');
+        const words = ['Frontend Developer', 'Full Stack Engineer', 'JavaScript Enthusiast'];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let currentWord = '';
+
+        function type() {
+            if (charIndex < words[wordIndex].length) {
+                currentWord += words[wordIndex][charIndex];
+                typedText.textContent = currentWord;
+                charIndex++;
+                setTimeout(type, Math.random() * 100 + 50);
+            } else {
+                setTimeout(erase, 2000);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                currentWord = currentWord.slice(0, -1);
+                typedText.textContent = currentWord;
+                charIndex--;
+                setTimeout(erase, 60);
+            } else {
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(type, 600);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            type();
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
