@@ -50,7 +50,7 @@ header.scrolled {
 #profile-img-box a {
   height: 100%;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   height: 50px;
   border-radius: 50%;
   display: flex;
@@ -305,7 +305,7 @@ body.dark .project-card p {
   color: rgb(248, 243, 243);
 }
 
-body.dark nav a {
+body.dark nav a ,body.dark #profile-img-box h2 {
   color: white;
 }
 
@@ -583,6 +583,15 @@ body.dark form button:hover {
   margin: 10% auto;
   padding: 20px;
   background: white;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  position: relative;
+}
+body.dark .modal-content {
+  margin: 10% auto;
+  padding: 20px;
+  background: rgb(0, 0, 0);
   width: 80%;
   max-width: 700px;
   border-radius: 10px;
