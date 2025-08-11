@@ -79,3 +79,8 @@
     const container = document.querySelector('.projects');
     container.scrollLeft = container.scrollWidth;
   });
+  document.querySelector('.menu-btn').addEventListener('click', () => {
+  document.querySelector('.menu-btn').classList.toggle('active');
+  document.querySelector('.header-2 .menu').classList.toggle('active');
+});
+   

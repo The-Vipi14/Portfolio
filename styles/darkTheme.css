@@ -1,0 +1,55 @@
+body.dark {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+
+body.dark .hero {
+  background: #1a202c;
+  color: #e2e8f0;
+}
+body.dark .about-left p{
+  background: #1a202c;
+  color: #e2e8f0;
+}
+body.dark .skill {
+  box-shadow: none;
+}   
+
+body.dark header {
+  background: rgba(17, 24, 39, 0.8);
+}
+
+body.dark header.scrolled {
+  background: rgba(17, 24, 39, 0.95);
+}
+body.dark .about-left{
+  color: #e2e8f0;
+}
+body.dark footer {
+  background: #111827;
+}
+
+body.dark .project-card,
+body.dark form input,
+body.dark form textarea {
+  background: #2d3748;
+  color: #ece3e3;
+  border-color: #4a5568;
+}
+
+body.dark .project-card h3,
+body.dark .project-card p {
+  color: rgb(248, 243, 243);
+}
+
+body.dark nav a ,body.dark #profile-img-box h2 {
+  color: white;
+}
+
+body.dark form button {
+  background: #2563eb;
+}
+
+body.dark form button:hover {
+  background: #1e40af;
+}

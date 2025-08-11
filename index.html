@@ -5,16 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/darkTheme.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <meta name="description"
         content="Personal portfolio showcasing projects in frontend, full stack development, and modern UI design.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body>
     <header>
         <div id="profile-img-box">
-           <a href="#profile"><img src="./images/vipin.jpg" alt="">
-            <h2>Vipin</h2></a> 
+            <a href="#profile"><img src="./images/vipin.jpg" alt="">
+                <h2>Vipin</h2>
+            </a>
         </div>
         <nav>
             <a href="#about">About</a>
@@ -22,11 +36,36 @@
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button class="toggle-dark" id="darkToggle">Dark Mode</button>
+        <button class="toggle-dark" id="darkToggle"><i class="fas fa-moon"></i></button>
+    </header>
+    <header class="header-2">
+        <div id="profile-img-box">
+            <a href="#profile"><img src="./images/vipin.jpg" alt="">
+                <h2>Vipin</h2>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </div>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <!-- <button class="toggle-dark" id="darkToggle"><i
+                    class="fas fa-moon"></i></button> -->
+            <div class="menu-btn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </div>
+
     </header>
 
     <section class="hero" id="profile">
-        <div class="hero-content">
+        <div class="hero-box">
             <div class="hero-text">
                 <h1>Hello, I'm Vipin</h1>
                 <p><span class="typed-text"></span></p>
@@ -37,25 +76,49 @@
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Dedicated and detail-oriented IT Diploma student with strong programming fundamentals and hands-on
-            experience in full stack web development. Passionate about building efficient, responsive web applications
-            and eager to contribute to a dynamic development team. </p>
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <span class="badge">👨‍💻 Aspiring Full Stack Developer</span>
+            <h1>Crafting Digital Experiences with Code & Creativity</h1>
+            <p>
+                I’m a passionate Full Stack Developer with a strong foundation in modern web technologies.
+                I have completed my 3 year Diploma in Information Technology, I combine academic knowledge with hands-on
+                experience to create innovative
+                digital solutions.
+            </p>
+            <p>
+                My journey in web development started with curiosity and has evolved into a genuine passion for building
+                applications that make a difference. I believe in writing clean, efficient code and creating user
+                experiences that are both beautiful and functional.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <img src="./images/vipin.jpg" alt="Vipin" class="profile-img" />
+            <div class="status-dot"></div>
+            <h2>Vipin</h2>
+            <p>👨‍💻 Aspiring Full Stack Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/The-Vipi14" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+            </div>
+            <div class="stats">
+                <a href="./resume/VIPIN.pdf" target="_blank"><strong>My resume</strong></a>
+                <a href="./resume/VIPIN.pdf" class="download-btn" target="_blank" download>Download PDF</a>
+            </div>
+        </div>
     </section>
-
-
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
             <div class="project-card">
-                <img src="images/portfolio.png" alt="Portfolio Website Screenshot">
+                <img src="images/Vipin.png" alt="Portfolio Website Screenshot">
                 <h3>Portfolio Website</h3>
                 <p>Designed and developed a responsive personal portfolio website to showcase my skills and projects.
                 </p>
                 <div class="project-buttons">
-                    <button class="see-project-btn" data-video="videos/portfolio.mp4">See Project</button>
+                    <button class="see-project-btn" data-video="videos/Vipin.mp4">See Project</button>
                     <button class="project-details-btn" data-title="Portfolio Website" data-details="Developed a mobile-responsive personal website using 
 HTML, CSS, and JavaScript. 
 Includes sections for About Me, Skills, and Contact Form.   ">
@@ -111,71 +174,96 @@ sensor integration, and dashboard UI development. ">
         </div>
     </section>
 
+    <section class="skills-section" id="skills">
+        <h2>Pragramming Skills</h2>
+        <div class="skills-container">
+            <div class="skill" data-percent="70">
+                <div class="tech-per">
+                    <h4>HTML</h4>
+                    <p>70%</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
 
+            </div>
 
-<section class="skills-section" id="skills">
-    <h2>Pragramming Skills</h2>
-    <div class="skills-container">
-        <div class="skill" data-percent="70">
-            <h4>HTML</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="60">
+                <div class="tech-per">
+                    <h4>CSS</h4>
+                    <p>50%</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
             </div>
-            <p>70%</p>
-        </div>
 
-        <div class="skill" data-percent="60">
-            <h4>CSS</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <p>60%</p>
-        </div>
+            <div class="skill" data-percent="50">
+                <div class="tech-per">
+                    <h4>JavaScript</h4>
+                    <p>50%</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
 
-        <div class="skill" data-percent="50">
-            <h4>JavaScript</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
             </div>
-            <p>50%</p>
-        </div>
-        <div class="skill" data-percent="30">
-            <h4>Node.js</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="30">
+                <div class="tech-per">
+                    <h4>Node.js</h4>
+                    <p>30%</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
             </div>
-            <p>30%</p>
-        </div>
-        <div class="skill" data-percent="20">
-            <h4>Mongo DB</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="20">
+                <div class="tech-per">
+                    <h4>Mongo DB</h4>
+                    <p>20%</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
             </div>
-            <p>20%</p>
-        </div>
-        <div class="skill" data-percent="50">
-            <h4>C</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="50">
+                <div class="tech-per">
+                    <h4>C</h4>
+                    <p>50%</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
             </div>
-            <p>50%</p>
-        </div>
-        <div class="skill" data-percent="50">
-            <h4>C++</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="50">
+                <div class="tech-per">
+                    <h4>C++</h4>
+                    <p>50%</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
             </div>
-            <p>50%</p>
-        </div>
-        <div class="skill" data-percent="30">
-            <h4>Java</h4>
-            <div class="progress-bar">
-                <div class="progress"></div>
+            <div class="skill" data-percent="30">
+                <div class="tech-per">
+                    <h4>Java</h4>
+                    <p>30%</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
             </div>
-            <p>30%</p>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -187,18 +275,36 @@ sensor integration, and dashboard UI development. ">
             <p id="formSuccess">Message sent successfully!</p>
         </form>
     </section>
-
     <footer>
-        <p>© 2025 Vipin. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Vipin</h3>
+                <p>Email: vipinbhardwal286@gmail.com</p>
+                <p>Phone: 9528967907</p>
+                <p>Location: Chamba, Tehri Garhwal, Uttarakhand</p>
+            </div>
+
+            <div class="footer-separator"></div>
+
+            <div class="footer-right">
+                <h4>Follow Me</h4>
+                <div class="footer-social-links">
+                    <a href="https://github.com/The-Vipi14" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/vipin Bhardwal" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+
     <script>
-        document.querySelectorAll('a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
 
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
@@ -210,9 +316,17 @@ sensor integration, and dashboard UI development. ">
         });
 
         const darkToggle = document.getElementById('darkToggle');
+        const icon = darkToggle.querySelector('i');
+
         darkToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark');
-            darkToggle.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+            if (document.body.classList.contains('dark')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                darkToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                darkToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
         });
 
         const scrollTopBtn = document.getElementById('scrollTopBtn');
@@ -253,6 +367,8 @@ sensor integration, and dashboard UI development. ">
     </script>
 
     <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="ham.js"></script>
 </body>
 
 </html>
